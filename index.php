@@ -42,6 +42,15 @@ $appointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <label>Phone Number:</label><br>
         <input type="text" name="phone" required>
         <br><br>
+    
+        <label>Email:</label>
+
+<input type="email"
+       name="email"
+       placeholder="Enter customer email"
+       required>
+
+<br><br>
 
         <label>Service:</label><br>
         <input type="text" name="service" required>
@@ -98,6 +107,10 @@ $appointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <p>Phone:
                 <?php echo htmlspecialchars($appointment['phone']); ?>
             </p>
+
+            <p>Email:
+               <?php echo htmlspecialchars($appointment['email']); ?>
+           </p>
 
             <p>Service:
                 <?php echo htmlspecialchars($appointment['service']); ?>
