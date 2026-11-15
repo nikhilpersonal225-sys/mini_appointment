@@ -40,6 +40,12 @@ if (!$appointment) {
         <input type="text" name="phone"
                value="<?php echo htmlspecialchars($appointment['phone']); ?>">
         <br><br>
+       
+         <label>Email:</label>
+        <input type="email" name="email"
+        value="<?php echo htmlspecialchars($appointment['email']); ?>"
+        required>
+        <br><br>
 
         <label>Service:</label>
         <input type="text" name="service"
